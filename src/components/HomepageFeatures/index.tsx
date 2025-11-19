@@ -13,8 +13,8 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Automated',
-    // Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    image: '/img/feature_lone_penguin.png',
+    Svg: require('@site/static/img/excalead/ILLU_1.svg').default,
+    // image: '/img/feature_lone_penguin.png',
     description: (
       <>
         Audits are expensive, especially for new projects.<br />
@@ -25,8 +25,8 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Reliable',
-    // Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    image: '/img/feature_rocket.png',
+    Svg: require('@site/static/img/excalead/ILLU_2.svg').default,
+    // image: '/img/feature_rocket.png',
     description: (
       <>
         We ensure audits are extensive,<br />
@@ -37,8 +37,8 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Subscription Based',
-    // Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    image: '/img/feature_three_penguins.png',
+    Svg: require('@site/static/img/excalead/ILLU_3.svg').default,
+    // image: '/img/feature_three_penguins.png',
     description: (
       <>
         Pay as you go, a reasonable fee each month.<br />
@@ -57,7 +57,16 @@ function Feature({title, Svg, image, description}: FeatureItem) {
         {image && <img src={image} alt={title} className={styles.featureImage} style={{width: 220}} />}
       </div>
       <div className="text--center padding-horiz--md">
-        <Heading as="h3" style={{paddingBottom: 12, paddingTop: 20}}>{title}</Heading>
+        <Heading
+          as="h3"
+          style={{
+            fontFamily: "'Audiowide', sans-serif",
+            paddingBottom: 12,
+            paddingTop: 20,
+          }}
+        >
+          {title}
+        </Heading>
         <p>{description}</p>
       </div>
     </div>

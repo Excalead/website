@@ -11,6 +11,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Audiowide';
+  src: url('../fonts/Audiowide-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #2254c5;
@@ -28,6 +36,10 @@
 
 .snowTitle {
   font-family: 'OurSnowFont';
+}
+
+.audiowideTitle {
+  font-family: 'Audiowide';
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */

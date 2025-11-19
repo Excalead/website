@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Excalead',
   tagline: 'Smart contracts audit with AI.',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/excalead/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -46,7 +46,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/excalead/website/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -81,15 +81,15 @@ const config: Config = {
     navbar: {
       title: 'Excalead',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.png',
+        alt: 'Excalead logo',
+        src: 'img/excalead/full_square_rounded.png',
       },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'sidebar',
           position: 'left',
-          label: '🗓️ Calendar',
+          label: 'Calendar',
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {

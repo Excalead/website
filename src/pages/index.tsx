@@ -13,23 +13,26 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <Heading as="h1" className="hero__title" style={{fontFamily: "'OurSnowFont', sans-serif", fontSize: 100, marginBottom: 35}}>
-          {siteConfig.title}
+        <Heading
+          as="h1"
+          className="hero__title"
+          style={{
+            // fontFamily: "'OurSnowFont', sans-serif",
+            fontFamily: "'Audiowide', sans-serif",
+            fontSize: 100,
+            marginBottom: 35,
+          }}
+        >
+          Smart contracts<br />
+          audit with AI.
         </Heading>
-        <p className="hero__subtitle" style={{marginBottom: 40}}>{siteConfig.tagline}</p>
-        <p>
+        {/* <p className="hero__subtitle" style={{marginBottom: 40}}>{siteConfig.tagline}</p> */}
+        <p className="hero__subtitle">
           Participating in the <a href="https://www.colosseum.com/cypherpunk" style={{color: 'var(--ifm-hero-text-color)'}}>Cypherpunk Colosseum Hackathon</a>.
         </p>
         <p>
-          Helped by <a href="https://fr.superteam.fun/" style={{color: 'var(--ifm-hero-text-color)'}}>Superteam France 🇫🇷🥖</a>.
+          Helped by <a href="https://fr.superteam.fun/" style={{color: 'var(--ifm-hero-text-color)'}}>Superteam France</a>.
         </p>
-        {/* <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div> */}
       </div>
     </header>
   );
