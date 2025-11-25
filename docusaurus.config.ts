@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Excalead',
-  tagline: 'Smart contracts audit with AI.',
+  tagline: 'Dedicated to Solana.',
   favicon: 'img/excalead/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -85,12 +85,12 @@ const config: Config = {
         src: 'img/excalead/full_square_rounded.png',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'sidebar',
-          position: 'left',
-          label: 'Calendar',
-        },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'sidebar',
+        //   position: 'left',
+        //   label: 'Calendar',
+        // },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/excalead',
