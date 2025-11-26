@@ -98,7 +98,6 @@ function HomepageHeader() {
           className="hero__title"
           style={{
             fontFamily: "'Audiowide', sans-serif",
-            fontSize: '6rem',
             lineHeight: '1.2',
           }}
         >
@@ -112,13 +111,14 @@ function HomepageHeader() {
         <div className={styles.buttons} style={{ marginTop: '50px' }}>
           <Link
             className="button button--secondary button--lg"
+            style={{marginTop: '8px'}}
             to="mailto:contact@excalead.com"
           >
             Start Your Audit 🕵️
           </Link>
           <Link
             className="button button--outline button--secondary button--lg"
-            style={{marginLeft: '10px', color: 'white', borderColor:'white'}}
+            style={{marginLeft: '10px', marginTop: '8px', color: 'white', borderColor:'white'}}
             to="https://github.com/Excalead/excalead">
             View on GitHub
           </Link>
@@ -167,7 +167,7 @@ function ProcessSection() {
         <div className="row">
           {PROCESS_STEPS.map((step, idx) => (
             <div key={idx} className="col col--4">
-              <div className="card shadow--md">
+              <div className="card shadow--md" style={{ marginBottom: '2rem' }}>
                 <div className="card__header">
                   <h3>{step.title}</h3>
                 </div>
@@ -200,6 +200,17 @@ function AuditedBy() {
               Domin8
             </a>
           </span>
+          <span className={styles.trustBadge}>
+            <a href="https://www.bill-z.com/" target="_blank" rel="noopener noreferrer">
+              <img src="/img/billz.jpg" alt="Billz" style={{height: 140, verticalAlign: 'middle', marginRight: 10}} />
+              Billz
+            </a>
+          </span>
+        </div>
+        <div className={styles.trustBadgeRow}>
+          <span className={styles.trustBadge} style={{ opacity: 0.5, fontStyle: 'italic', marginTop: 48 }}>
+            ...more coming!
+          </span>
         </div>
       </div>
     )
@@ -211,13 +222,13 @@ function SupportedBy() {
         <p style={{opacity: 0.6, fontWeight: 'bold', textTransform: 'uppercase'}}>Supported By</p>
         <div className={styles.trustBadgeRow}>
           {/* Add supporting teams' logos here */}
-          <span className={styles.trustBadge}>
+          <span className={styles.trustBadge} style={{ marginTop: 24 }}>
             <a href="https://fr.superteam.fun" target="_blank" rel="noopener noreferrer">
               <img src="/img/superteam_france.jpg" alt="Superteam France" style={{height: 96, verticalAlign: 'middle', marginRight: 24}} />
               Superteam France
             </a>
           </span>
-          <span className={styles.trustBadge}>
+          <span className={styles.trustBadge} style={{ marginTop: 24 }}>
             <a href="https://formal.land/" target="_blank" rel="noopener noreferrer">
               <img src="/img/formal-land.png" alt="Formal Land" style={{height: 96, verticalAlign: 'middle', marginRight: 24}} />
               Formal Land
