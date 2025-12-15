@@ -251,6 +251,12 @@ export default function Home() {
       description="Continuous auditing for Solana smart contracts, with Formal Verification & AI">
       <HomepageHeader />
       <main>
+        <div className={styles.trustBadgeRow} style={{ marginTop: 60 }}>
+          <div className={styles.trustBadge}>
+            🏆 Honorable Mention @ <a href="https://blog.colosseum.com/announcing-the-winners-of-the-solana-cypherpunk-hackathon/">Solana Colosseum Hackathon</a>
+          </div>
+        </div>
+
         <section className={styles.features} style={{ marginBottom: '6rem', marginTop: '6rem' }}>
           <div className="container">
             <div className="row">
